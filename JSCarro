@@ -1,0 +1,23 @@
+let index = 0;
+const intervaloTempo = 3000;
+function mostrarImagem(n) {
+    const imagens = document.querySelectorAll('.imagens img');
+
+    if (n >= imagens.length) {
+        index = 0;
+    } else if (n < 0) {
+        index = imagens.length - 1;
+    } else {
+        index = n;
+    }
+    const offset = -index * 100;
+    document.querySelector('.imagens').style.transform = `translateX(${offset}%)`;
+}
+function mover(n) {
+    mostrarImagem(index + n);
+}
+mostrarImagem(index);
+
+setInterval(() => {
+    mover(1);
+}, intervaloTempo);
