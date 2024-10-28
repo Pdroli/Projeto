@@ -1,0 +1,34 @@
+section.slider{
+    margin: 0;
+    box-shadow: 2px 2px 4px;
+    overflow: hidden;
+    height: 600px;
+    width: 500px;
+    padding: 0 !important;
+    align-content: center;
+}
+img{
+    object-fit:fill;
+    height: 700px;
+    width: 574px;
+    display: flex;
+    transition: transform 0.5s ease;
+    max-width: 100%;
+    display: block;
+    padding: 10px;
+}
+.carrossel {
+    position: relative;
+    max-width: 574px;
+    margin: auto;
+    overflow: hidden;
+    margin-right: -2px;
+}
+.imagens {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.imagens img {
+    max-width: 100%;
+    display: block;
+}
